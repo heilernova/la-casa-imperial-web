@@ -1,0 +1,53 @@
+<div class="logo">
+    <img src="/logos/logo.svg" alt="La Casa Imperial">
+    <div class="name">
+        La Casa Imperial
+    </div>
+</div>
+<div>
+
+</div>
+<div class="actions">
+    <button nz-button nzType="text">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    <button nz-button nzType="text" (click)="onClickShowContact()">
+        <i class="fa-solid fa-phone"></i>
+    </button>
+</div>
+
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="Contactos oficiales" (nzOnCancel)="handleCancel()">
+    <div *nzModalContent>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            (312) 576-8084
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            {{'buzon@lacasaimperial.com'}}
+        </div>
+        <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            Escribir por WhatsApp
+        </div>
+    </div>
+    <div *nzModalFooter>
+      <!-- <button nz-button nzType="default">Custom Callback</button> -->
+        <button nz-button (click)="handleCancel()">
+            <div class="flex-button">
+                <i class="fa-brands fa-whatsapp"></i>
+                Escribir
+            </div>
+        </button>
+        <button nz-button (click)="handleCancel()">
+            <div class="flex-button">
+                <i class="fa-solid fa-phone-volume"></i>
+                Llamar
+            </div>
+        </button>
+        <button nz-button nzType="primary" (click)="handleCancel()">
+            Cerrar
+        </button>
+    </div>
+</nz-modal>

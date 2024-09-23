@@ -7,6 +7,7 @@
     --app-text-color-1: #B6BEC9;
 
     --app-header-background-color: var(--app-color-primary);
+    --app-header-color: white;
     --app-nav-background-color:hsl(220, 60%, 97%);
     --app-nav-color:hsl(215, 15%, 12%);
     --app-nav-border-bottom: 1px solid hsla(210, 14%, 28%, 0.3);
@@ -28,4 +29,10 @@ body {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.flex-button {
+    display: flex;
+    align-items: center;
+    column-gap: .5em;
 }

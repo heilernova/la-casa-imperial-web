@@ -1,0 +1,18 @@
+:host {
+    display: grid;
+    grid-row: auto 1fr;
+}
+
+.panel-header {
+    header {
+        background-color: var(--app-header-background-color);
+        color: var(--app-header-color);
+        padding: .5em 1em;
+    }
+}
+
+.panel-content {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    overflow: auto;
+}

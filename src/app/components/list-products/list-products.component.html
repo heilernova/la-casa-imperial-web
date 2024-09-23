@@ -1,0 +1,56 @@
+
+<ul>
+    @for (item of listProducts(); track $index) {
+        <li class="item">
+            <div class="image">
+                <img [src]="item.gallery[0] + '?size=small'" alt="" height="150">
+            </div>
+            <div class="info">
+                <div class="name">
+                    {{item.name}}
+                </div>
+                <div>
+
+                </div>
+                <!-- <div>
+                    {{item.brand ?? ''}}
+                </div> -->
+                <div class="price">
+                    $ {{item.price | number}}
+                </div>
+                <div class="controls">
+                    <button nz-button nzType="primary">Mas información</button>
+                    <button nz-button nzType="primary">Enviar mensaje</button>
+                    <!-- <button nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu"></button> -->
+                    <button nz-button nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <nz-dropdown-menu #menu="nzDropdownMenu" style="z-index: 100; background-color: aliceblue;">
+                        <ul nz-menu>
+                          <li nz-menu-item>1st menu item</li>
+                          <li nz-menu-item>2nd menu item</li>
+                          <li nz-menu-divider></li>
+                          <li nz-menu-item nzDisabled>disabled menu item</li>
+                          <li nz-submenu nzTitle="sub menu">
+                            <ul>
+                              <li nz-menu-item>3rd menu item</li>
+                              <li nz-menu-item>4th menu item</li>
+                            </ul>
+                          </li>
+                          <li nz-submenu nzDisabled nzTitle="disabled sub menu">
+                            <ul>
+                              <li nz-menu-item>3rd menu item</li>
+                              <li nz-menu-item>4th menu item</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </nz-dropdown-menu>
+                    
+                </div>
+            </div>
+            <div class="tags">
+                <div class="brand" >{{item.brand}}</div>
+            </div>
+        </li>
+    }
+</ul>
