@@ -15,9 +15,14 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 })
 export class HeaderContentComponent {
   public isVisible = signal<boolean>(false);
+  public iconTheme = signal<"fa-solid fa-moon" | "fa-solid fa-sun">("fa-solid fa-moon");
 
   constructor(){
 
+  }
+
+  onClickChangeTheme(): void {
+    this.iconTheme.set(this.iconTheme() == "fa-solid fa-moon" ? "fa-solid fa-sun" : "fa-solid fa-moon");
   }
 
   showModal1(): void {

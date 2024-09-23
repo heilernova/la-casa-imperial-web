@@ -8,8 +8,8 @@
 
 </div>
 <div class="actions">
-    <button nz-button nzType="text">
-        <i class="fa-solid fa-moon"></i>
+    <button nz-button nzType="text" (click)="onClickChangeTheme()">
+        <i [classList]="iconTheme()"></i>
     </button>
     <button nz-button nzType="text" (click)="onClickShowContact()">
         <i class="fa-solid fa-phone"></i>
