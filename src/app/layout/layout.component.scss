@@ -9,6 +9,10 @@
         color: var(--app-header-color);
         padding: .5em 1em;
     }
+    nav {
+        padding: .5em 1em;
+        background-color: var(--app-nav-background-color);
+    }
 }
 
 .panel-content {
