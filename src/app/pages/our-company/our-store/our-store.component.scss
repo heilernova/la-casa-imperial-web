@@ -1,0 +1,13 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F1F6FC;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+
+    .title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}

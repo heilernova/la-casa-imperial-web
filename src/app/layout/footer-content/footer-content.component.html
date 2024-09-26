@@ -1,0 +1,94 @@
+<section class="info">
+    <div class="column">
+        <div>INVERSIONES LA CASA IMPERIAL SAS ZOMAC</div>
+        <div>901.813.112</div>
+    </div>
+
+    <div class="column">
+        {{email}}
+    </div>
+
+    <div class="column">
+        <div>Venta Telefonica</div>
+        <div>{{cellphone}}</div>
+    </div>
+</section>
+
+
+<!-- <section class="payment-method">
+    <div>Medios de pago aceptados</div>
+    <ul>
+        @for (item of paymentMethods(); track $index) {
+            <li>
+                <img [src]="item.img" alt="">
+            </li>
+        }
+    </ul>
+</section> -->
+
+
+<section class="x" style="display: flex; gap: 5em; flex-wrap: wrap;">
+    <section class="our-company">
+        <div>Nuestra compañía</div>
+        <ul>
+            <li>
+                <a routerLink="/nuestra-compania/quienes-somos">
+                    Quienes somos
+                </a>
+            </li>
+            <li>
+                <a routerLink="/nuestra-compania/nuestra-tienda">
+                    Nuestra tienda
+                </a>
+            </li>
+            <li> 
+                <a routerLink="/contacto">
+                    Contáctenos
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="policies">
+        <div>Políticas</div>
+        <ul>
+            <li>
+                <a routerLink="/garantias">
+                    Garantías
+                </a>
+            </li>
+            <li>
+                <a routerLink="/politicas/cambios-y-devoluciones">
+                    Políticas de cambio y devoluciones
+                </a>
+            </li>
+            <li>
+                <a routerLink="/politicas/privacidad">
+                    Políticas de privacidad
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="services">
+        <div>Servicios</div>
+        <ul>
+            <li routerLink="/consultar-tu-factura">Consulta tu factura</li>
+            <li routerLink="/garantias">Consultar estado de tu crédito</li>
+        </ul>
+    </section>
+</section>
+
+<section class="credits">
+
+    <div>
+        © 2024 INVERSIONES LA CASA IMPERIAL S.A.S ZOMAC | Todos los derechos reservados.
+    </div>
+
+    <div style="display: flex; align-items: center; column-gap: .3em;">
+        <img src="/logos/novah.svg" alt="Novah.dev" srcset="" height="20">
+        <div>
+            Novah.dev
+        </div>
+    </div>
+</section>

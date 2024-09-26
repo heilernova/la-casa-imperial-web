@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { HeaderContentComponent } from './header-content/header-content.component';
 import { NavContentComponent } from './nav-content/nav-content.component';
 import { ListProductsComponent } from "../components/list-products/list-products.component";
+import { FooterContentComponent } from './footer-content/footer-content.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -9,7 +11,9 @@ import { ListProductsComponent } from "../components/list-products/list-products
   imports: [
     HeaderContentComponent,
     NavContentComponent,
-    ListProductsComponent
+    ListProductsComponent,
+    FooterContentComponent,
+    RouterOutlet
 ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
