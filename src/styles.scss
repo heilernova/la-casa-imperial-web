@@ -11,6 +11,7 @@
     
     --app-nav-background-color:hsl(220, 60%, 97%);
     --app-nav-color:hsl(215, 15%, 12%);
+    --app-nav-hover-background-color: hsl(210, 32%, 90%);
     --app-nav-border-bottom: 1px solid hsla(210, 14%, 28%, 0.3);
 }
 
@@ -18,7 +19,12 @@
     --app-body-background-color: hsl(210, 14%, 7%);  //#0F1214;
     --app-text-color-1: #B6BEC9;
 
-    --app-header-background-color: hsl(210, 14%, 7%)
+    --app-header-background-color: hsl(210, 14%, 7%);
+   
+    --app-nav-background-color:hsl(210, 14%, 7%);
+    --app-nav-color:hsl(215, 15%, 75%);
+    --app-nav-hover-background-color: hsla(210, 14%, 13%, 0.8);
+    --app-nav-border-bottom: 1px solid hsla(210, 14%, 28%, 0.3);
 }
 
 body {

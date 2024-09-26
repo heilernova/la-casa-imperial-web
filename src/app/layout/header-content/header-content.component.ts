@@ -28,7 +28,8 @@ export class HeaderContentComponent {
 
   onClickChangeTheme(): void {
     this.iconTheme.set(this.iconTheme() == "fa-solid fa-moon" ? "fa-solid fa-sun" : "fa-solid fa-moon");
-    this._layout.changeTheme("dark");
+    this._layout.theme = this._layout.theme == "light" ? "dark" : "light";
+    // this._layout.changeTheme("dark");
   }
 
   showModal1(): void {

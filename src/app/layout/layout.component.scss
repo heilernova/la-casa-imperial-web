@@ -12,7 +12,10 @@
     nav {
         padding: .5em 1em;
         background-color: var(--app-nav-background-color);
+        color: var(--app-nav-color);
+
     }
+    border-bottom: 1px solid hsla(210, 14%, 28%, 0.3);
 }
 
 .panel-content {
