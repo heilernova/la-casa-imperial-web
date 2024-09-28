@@ -1,7 +1,9 @@
 <ul>
     @for (item of list; track $index) {
         <li>
-            {{item.name}}
+            <a [routerLink]="item.link">
+                {{item.name}}
+            </a>
         </li>
     }
 </ul>

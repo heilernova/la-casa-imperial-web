@@ -3,6 +3,8 @@ import { HeaderContentComponent } from './header-content/header-content.componen
 import { NavContentComponent } from './nav-content/nav-content.component';
 import { ListProductsComponent } from "../components/list-products/list-products.component";
 import { LayoutService } from './layout.service';
+import { FooterContentComponent } from './footer-content/footer-content.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -10,7 +12,9 @@ import { LayoutService } from './layout.service';
   imports: [
     HeaderContentComponent,
     NavContentComponent,
-    ListProductsComponent
+    ListProductsComponent,
+    FooterContentComponent,
+    RouterOutlet
 ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'

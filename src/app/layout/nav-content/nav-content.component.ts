@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav-content',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './nav-content.component.html',
   styleUrl: './nav-content.component.scss'
 })
@@ -23,19 +26,19 @@ export class NavContentComponent {
     },
     {
       name: "Televisores",
-      link: "electrodomesticos/lavado/lavadoras"
+      link: "televisores"
     },
     {
       name: "Cocina",
-      link: "electrodomesticos/lavado/lavadoras"
+      link: "electrodomesticos/cocina"
     },
     {
       name: "Climatización",
-      link: "electrodomesticos/lavado/lavadoras"
+      link: "electrodomesticos/climatizacion"
     },
     {
       name: "Cuidad del hogar",
-      link: "electrodomesticos/lavado/lavadoras"
+      link: "electrodomesticos/cuidado-del-hogar"
     },
   ];
 }
